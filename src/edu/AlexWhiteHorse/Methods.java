@@ -79,7 +79,7 @@ class Derivatives{
         double x_1 = x0 - h,
                 x_2 = x_1 - h;
         System.out.println("3 - point Prcedure: ");
-        double f3 = ( func.func(x1 + h) - func.func(x1 - h) ) / 2*h;
+        double f3 = ( func.func(x0 + h) - func.func(x0 - h) ) / 2*h;
         System.out.println(f3 + "\n" );
 
         System.out.println("4 - point");
@@ -91,7 +91,7 @@ class Derivatives{
 
         System.out.println("5 - point");
 
-        double f5 = (func.func(x_2) - 8 * func.func(x_1) + 8 * func.func(x1) - func.func(x3)) / 12 * h;
+        double f5 = (func.func(x_2) - 8 * func.func(x_1) + 8 * func.func(x1) - func.func(x2)) / 12 * h;
         double f5_2 = (-3 * func.func(x_1) - 10* func.func(x0) + 18 * func.func(x1) - 6 * func.func(x2) + func.func(x3))/12*h;
         double f5_3 = (-25* func.func(x0) + 48 * func.func(x1) - 36 * func.func(x2) + 16 * func.func(x3) - 3 * func.func(x4))/12*h;
 
